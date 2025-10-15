@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic Structure & Elements Assignment</title>
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="simulation-area">
+            <h1 class="simulation-title">Atomic Structure & Elements</h1>
+            <canvas id="atomCanvas" width="700" height="700"></canvas>
+        </div>
+        <div class="controls">
+            <div class="control-group">
+                <h3>Build Your Atom</h3>
+                <div class="particle-control">
+                    <span class="particle-label">Protons (+)</span>
+                    <div class="button-group">
+                        <button id="remove-proton">-</button>
+                        <span id="proton-count" class="particle-count">0</span>
+                        <button id="add-proton">+</button>
+                    </div>
+                </div>
+                <div class="particle-control">
+                    <span class="particle-label">Neutrons (N)</span>
+                    <div class="button-group">
+                        <button id="remove-neutron">-</button>
+                        <span id="neutron-count" class="particle-count">0</span>
+                        <button id="add-neutron">+</button>
+                    </div>
+                </div>
+                <div class="particle-control">
+                    <span class="particle-label">Electrons (-)</span>
+                    <div class="button-group">
+                        <button id="remove-electron">-</button>
+                        <span id="electron-count" class="particle-count">0</span>
+                        <button id="add-electron">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-group">
+                <h3>Identify the Element</h3>
+                <input type="text" id="element-guess" class="text-input" placeholder="Type element name or symbol...">
+            </div>
+
+            <div class="info-group">
+                <h3>Atom Properties</h3>
+                <div class="info-display">
+                    <p>Mass Number: <span id="mass-number">0</span></p>
+                </div>
+            </div>
+            
+            <div class="button-container">
+                <button class="action-button" id="download-button">Download Atom Image</button>
+                <button class="action-button" id="reset-button">Reset Simulation</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to your external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
